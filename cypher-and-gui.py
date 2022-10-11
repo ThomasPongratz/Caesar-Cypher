@@ -35,8 +35,8 @@ def print_translated(translated):
     text_box.insert('end', translated)
     text_box.config(state='disabled')
     
-    text_box.grid(row=4, column=1, columnspan=2, sticky="w")
-    text_scroll.grid(row=4, column=2, sticky="nse")
+    text_box.grid(row=4, column=1, columnspan=2, pady=2, sticky="w")
+    text_scroll.grid(row=4, column=2, pady=2, sticky="nse")
 
 
 def get_mode(input_mode):
@@ -170,7 +170,7 @@ def OnLeave(event):
 
 encrypt_But = tk.Label(root, text='Encrypt', bg='white', relief='groove')
 #encrypt_But.place(x=10, y=10, width=100)
-encrypt_But.grid(row=3, column=1)
+encrypt_But.grid(row=3, column=1, pady=5)
 encrypt_But.bind('<Button-1>', OnPressed_encrypt)
 encrypt_But.bind('<Enter>', OnHover)
 encrypt_But.bind('<Leave>', OnLeave)
@@ -185,7 +185,7 @@ def OnLeave(event):
 
 decrypt_But = tk.Label(root, text='Decrypt', bg='white', relief='groove')
 #decrypt_But.place(x=10, y=10, width=100)
-decrypt_But.grid(row=3, column=2)
+decrypt_But.grid(row=3, column=2, pady=5)
 decrypt_But.bind('<Button-1>', OnPressed_decrypt)
 decrypt_But.bind('<Enter>', OnHover)
 decrypt_But.bind('<Leave>', OnLeave)
