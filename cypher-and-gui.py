@@ -62,7 +62,6 @@ def get_key(input_key):
 
 
 def caesar(input_mode):
-    print(input_mode)
     #message = input('Enter: ')
     message = input_entry.get()
     key = get_key(key_entry.get())
