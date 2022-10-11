@@ -184,7 +184,7 @@ def OnHover(event):
 def OnLeave(event):
     decrypt_But.config(bg='white', fg='black')
 
-decrypt_But = tk.Label(root, text='Encrypt', bg='white', relief='groove')
+decrypt_But = tk.Label(root, text='Decrypt', bg='white', relief='groove')
 #decrypt_But.place(x=10, y=10, width=100)
 decrypt_But.grid(row=3, column=2)
 decrypt_But.bind('<Button-1>', OnPressed_decrypt)
